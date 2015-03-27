@@ -255,7 +255,7 @@ function mvPopMatrix() {
         mat4.perspective(40, gl.viewportWidth / gl.viewportHeight, 0.1, 100.0, pMatrix);
         mat4.identity(mvMatrix);
 		
-        mat4.translate(mvMatrix, [-4, -2.0, -16.0]);
+        mat4.translate(mvMatrix, [-4, -2.0, -16.0]);//
 		mvPushMatrix();
         mat4.rotate(mvMatrix, degToRad(rTri), [0, 1, 0]);
 		
